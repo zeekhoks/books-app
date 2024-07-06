@@ -1,0 +1,11 @@
+.toggle-switch{
+    width: 25%;
+    padding: 0% !important;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#custom-switch{
+    padding: 0% !important;
+}

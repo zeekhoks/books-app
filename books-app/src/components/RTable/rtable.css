@@ -1,11 +1,48 @@
-.toggle-switch{
-    width: 25%;
-    padding: 0% !important;
+.results-table{
+    width: 100%;
+}
+
+.toggle-switch {
     display: flex;
     flex-direction: row;
+    gap: 5%;
+    justify-content: left;
+    width: 100%;
+    padding: 1.5%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    border: solid 1px #dee2e6;
+    border-radius: 10px;
     align-items: center;
 }
 
-#custom-switch{
+#custom-switch {
     padding: 0% !important;
+}
+
+.loading-placeholder {
+    animation: blink 1s infinite;
+    height: 20px;
+    border-radius: 4px;
+}
+
+.header-titles {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style:normal;
+}
+
+/* Add this to your CSS file or a <style> tag in your component file */
+@keyframes blink {
+    0% {
+        background-color: #f0f0f0;
+    }
+
+    50% {
+        background-color: #e0e0e0;
+    }
+
+    100% {
+        background-color: #f0f0f0;
+    }
 }

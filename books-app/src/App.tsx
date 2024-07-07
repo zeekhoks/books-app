@@ -1,6 +1,6 @@
 
 import './App.css'
-import BookApp from './components/BooksApp'
+import BookApp from './components/BooksApp/BooksApp'
 
 function App() {
 

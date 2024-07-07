@@ -1,0 +1,51 @@
+.search-container {
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px;
+    background-image: url('../../../public/Books_Illustration.jpg');
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.search-container.with-table {
+    width: 100%;
+    background-image: none;
+    min-height: 20%;
+    padding: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.welcome-box {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+}
+
+.welcome-box.with-table {
+    background-color: #F8F7F4;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
+    border: solid 1px #dee2e6;
+    box-shadow: none;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.welcome-text{
+    margin: 2%;
+}
+
+.welcome-text.with-table{
+    display: none;
+}

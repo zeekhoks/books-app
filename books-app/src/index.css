@@ -1,11 +1,11 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: dark;
   color: #303030;
-  background-color: #f0f0f0;
+  background-color: #f8f7f4;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -13,11 +13,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-
-/* body {
-  margin: 0;
+body {
+  margin: 0 auto;
   display: flex;
   place-items: center;
   width: 100%;
   min-height: 100vh;
-} */
+}

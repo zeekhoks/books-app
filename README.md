@@ -29,7 +29,9 @@ To get started with The Books Nook, follow these steps:
    npm run dev
     ```
 4. **Open the Application:**
-    Navigate to `http://localhost:5173` in your browser to view the application.
+    Navigate to `http://localhost:5173` in your browser to view the development server.
+  
+For a **Live Demo**, visit [The Books Nook](https://fplzainab.netlify.app/).
 
 ## Roadmap
 Here are some planned features and improvements for future versions:

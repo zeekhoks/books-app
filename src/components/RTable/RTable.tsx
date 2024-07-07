@@ -49,8 +49,9 @@ const RTable = ({ searchTerm }: { searchTerm: string }) => {
             
             const response = await fetch(url);
             const data = await response.json();
+            var id = data.start + 1;
             if(data.start>=0){
-                var id = data.start + 1;
+                
 
                 const booksData: Book[] = data.docs.map((book: any) => ({
                     id: id++,
@@ -118,7 +119,7 @@ const RTable = ({ searchTerm }: { searchTerm: string }) => {
         let end = Math.min(totalPages - 1, currActive + delta);
 
         range.push(<Pagination.Item onClick={() => handlePageChange(1)}
-            active={1 === state.activePage || 0 === state.activePage}>{1}</Pagination.Item>);
+            key={`page-1`} active={1 === state.activePage || 0 === state.activePage}>{1}</Pagination.Item>);
 
         if (start > 2) {
             range.push(<Pagination.Ellipsis key="start-ellipsis" />);
@@ -140,7 +141,7 @@ const RTable = ({ searchTerm }: { searchTerm: string }) => {
 
         if (totalPages > 1) {
             range.push(<Pagination.Item onClick={() => handlePageChange(state.numberOfPages)}
-                active={state.numberOfPages === state.activePage}>{state.numberOfPages}</Pagination.Item>);
+                key={`page-${state.numberOfPages}`} active={state.numberOfPages === state.activePage}>{state.numberOfPages}</Pagination.Item>);
         }
         return range;
     };
@@ -243,13 +244,9 @@ const RTable = ({ searchTerm }: { searchTerm: string }) => {
             </Table>
             <Pagination className="px-4">
                 <Pagination.First onClick={() => handlePageChange(1)} />
-                {
-                    state.activePage<1?<Pagination.Prev onClick={() => handlePageChange(1)} />
-                    :<Pagination.Prev onClick={() => handlePageChange(state.activePage - 1)} />
-                }
-                
+                <Pagination.Prev onClick={() =>{ if(state.activePage != 1) handlePageChange(state.activePage - 1); } } />
                 {getPaginationRange(state.activePage, state.numberOfPages)}
-                <Pagination.Next onClick={() => handlePageChange(state.activePage + 1)} />
+                <Pagination.Next onClick={() => { if(state.activePage != state.numberOfPages) handlePageChange(state.activePage + 1); }} />
                 <Pagination.Last onClick={() => handlePageChange(state.numberOfPages)} />
             </Pagination>
         </div>

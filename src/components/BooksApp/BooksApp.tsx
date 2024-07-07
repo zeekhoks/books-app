@@ -18,7 +18,7 @@ const BookApp = () => {
             <div className={`search-container ${searchTerm.length > 3 ? 'with-table' : ''}`}>
                 <div className={`welcome-box ${searchTerm.length > 3 ? 'with-table' : ''}`}>
                     <div className={`welcome-text ${searchTerm.length > 3 ? 'with-table' : ''}`}>
-                        <h2>Welcome to The Books' Nook</h2>
+                        <h2>Welcome to The Books Nook</h2>
                         <span>Your personal corner for your favorite books!</span>
                     </div>
                     <SearchBar sendDataToParent={getDataFromChild} />

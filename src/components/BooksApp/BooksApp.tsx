@@ -11,7 +11,11 @@ const BookApp = () => {
 
     const getDataFromChild = (data: string) => {
         setSearchTerm(data);
-        if (searchTerm.length < 3) setError(true);
+        if (searchTerm.length < 3) {
+            setError(true);
+        } else {
+            setError(false);
+        }
     }
 
     return (

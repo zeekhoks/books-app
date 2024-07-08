@@ -28,6 +28,7 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     width: 100%;
+    min-height: 280px;
 }
 
 .welcome-box.with-table {
@@ -48,4 +49,11 @@
 
 .welcome-text.with-table{
     display: none;
+}
+
+.error{
+    color: #bb2124;
+    padding: 1%;
+    display: flex;
+    justify-content: left;
 }

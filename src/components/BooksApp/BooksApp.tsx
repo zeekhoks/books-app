@@ -3,7 +3,6 @@ import { useState } from "react";
 import RTable from "../RTable/RTable";
 import SearchBar from "../Search/Search";
 import Container from 'react-bootstrap/Container';
-import Alert from 'react-bootstrap/Alert';
 import './booksapp.css';
 
 const BookApp = () => {
